@@ -1,0 +1,31 @@
+.content-slider {
+  overflow: hidden;
+  display: flex;
+
+  .slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .slider-sheet {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    width: 100vw;
+  }
+}
+
+#box-model:checked ~ .examples.content-slider .slider-content {
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+#flex-layout:checked ~ .examples.content-slider .slider-content {
+  transform: translateX(-100vw);
+  transition: transform 0.3s ease;
+}
+
+#z-index:checked ~ .examples.content-slider .slider-content {
+  transform: translateX(-200vw);
+  transition: transform 0.3s ease;
+}

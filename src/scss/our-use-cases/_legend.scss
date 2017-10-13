@@ -1,0 +1,25 @@
+.legend {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 100%;
+  color: $secondary-text;
+
+  .legend-header {
+    display: flex;
+    align-content: center;
+    border-bottom: 1px solid $dividers;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .legend-content {
+    display: flex;
+
+    .flex-column {
+      min-width: 350px;
+    }
+  }
+}

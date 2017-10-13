@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Basics</title>
+  <meta name="description" content="We dicuss the very basics off styling using CSS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./dist/styles.css">
+  <!-- <link rel="icon" href="./assets/favicon.ico?v=2" type="image/x-icon"> -->
+</head>
+<body>
+  <input id="box-model" class="hidden" type="radio" name="content-slider-toggle" checked />
+  <input id="flex-layout" class="hidden" type="radio"  name="content-slider-toggle" />
+  <input id="z-index" class="hidden" type="radio"  name="content-slider-toggle" />
+
+  <header>
+    <label for="box-model">box-model</label>
+    <label for="flex-layout">flex-layout</label>
+    <label for="z-index">z-index</label>
+  </header>
+
+  <div class="examples content-slider">
+    <div class="slider-content">
+      <div class="slider-sheet">
+
+        <div class="card">
+          <div class="card-header">
+            Explaining the box model
+          </div>
+          <div class="card-content">
+            <div class="position">
+              <div class="margin">
+                <div class="border-box">
+                  <div class="padding-box">
+                    <div class="content-box">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="legend">
+          <div class="legend-header">
+            LEGEND
+          </div>
+          <div class="legend-content">
+            <div class="flex-row flex-basis-0 flex-grow-1 flex-wrap">
+              <div class="flex-column flex-basis-0 flex-grow-1 padding">
+                <p class="flex-row justify-between"><span class="bold">top:</span><span>px | % | em | vh | vw | auto | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">right:</span><span>px | % | em | vh | vw | auto | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">bottom:</span><span>px | % | em | vh | vw | auto | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">left:</span><span>px | % | em | vh | vw | auto | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">margin:</span><span>:top: [:right:] [:bottom:] [:left:]</span></p>
+                <p class="flex-row justify-between"><span class="bold">margin-top:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">margin-right:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">margin-bottom:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">margin-left:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">padding:</span><span>:top: [:right:] [:bottom:] [:left:]</span></p>
+                <p class="flex-row justify-between"><span class="bold">padding-top:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">padding-right:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">padding-bottom:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">padding-left:</span><span>px | % | em | vh | vw | initial | inherit</span></p>
+              </div>
+              <div class="flex-column flex-basis-0 flex-grow-1 padding">
+                <p class="flex-row justify-between"><span class="bold">position:</span><span>static | relative | absolute | fixed</span></p>
+                <p class="flex-row justify-between"><span class="bold">display:</span><span>block | inline-block | flex | inline-flex | ...</span></p>
+              </div>
+              <div class="flex-column flex-basis-0 flex-grow-1 padding">
+                <p class="flex-row justify-between"><span class="bold">background-color:</span><span>HEX | RGB | RGBA | HSL | ...</span></p>
+                <p class="flex-row justify-between"><span class="bold">color:</span><span>HEX | RGB | RGBA | HSL | ...</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-sheet">
+
+        <div class="card">
+          <div class="card-header">
+            Experimenting with the flex-layout
+          </div>
+          <div class="card-content flex-row">
+            <div class="flex-column padding dye-accent flex-grow-1 flex-basis-0">
+              <div class="flex-row height-50 margin-bottom">
+                <div class="flex-grow-3 flex-basis-0 margin-right dye-white">
+                </div>
+                <div class="flex-grow-1 flex-basis-0 dye-white">
+                </div>
+              </div>
+
+              <div class="flex-row height-300">
+                <div class="flex-column flex-grow-1 flex-basis-0 margin-right">
+                  <div class="flex-grow-1 flex-basis-0 margin-bottom dye-white">
+                  </div>
+                  <div class="flex-grow-3 flex-basis-0 dye-white">
+                  </div>
+                </div>
+                <div class="flex-column flex-grow-1 flex-basis-0">
+                  <div class="flex-row flex-grow-2 flex-basis-0 margin-bottom">
+                    <div class="flex-grow-4 flex-basis-0 margin-right dye-white">
+                    </div>
+                    <div class="flex-grow-3 flex-basis-0 dye-white">
+                    </div>
+                  </div>
+                  <div class="flex-grow-2 flex-basis-0 dye-white">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="legend">
+          <div class="legend-header">
+            LEGEND
+          </div>
+          <div class="legend-content">
+            <div class="flex-row flex-basis-0 flex-grow-1 flex-wrap">
+              <div class="flex-column flex-basis-0 flex-grow-1 padding">
+                <p class="flex-row justify-between"><span class="bold">display:</span><span>flex | inline-flex</span></p>
+                <p class="flex-row justify-between"><span class="bold">flex-flow:</span><span>:flex-direction: [:flex-wrap:]</span></p>
+                <p class="flex-row justify-between"><span class="bold">flex-direction:</span><span>row | row-reverse | column | <br />column-reverse | initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">flex-wrap:</span><span>wrap | wrap-reverse | nowrap | <br />initial | inherit</span></p>
+                <p class="flex-row justify-between"><span class="bold">justify-content:</span><span>flex-start | center | flex-end | <br />space-between | space-around</span></p>
+                <p class="flex-row justify-between"><span class="bold">align-items</span><span>flex-start | center | flex-end | stretch</span></p>
+                <p class="flex-row justify-between"><span class="bold">align-self</span><span>flex-start | center | flex-end | stretch</span></p>
+              </div>
+              <div class="flex-column flex-basis-0 flex-grow-1 padding">
+              <p class="flex-row justify-between"><span class="bold">flex:</span><span>:flex-grow: [:flex-shrink:] [:flex-basis:]</span></p>
+              <p class="flex-row justify-between"><span class="bold">flex-grow:</span><span>Int &ge; 0</span></p>
+              <p class="flex-row justify-between"><span class="bold">flex-shrink:</span><span>Int &ge; 0</span></p>
+              <p class="flex-row justify-between"><span class="bold">flex-basis:</span><span>px | % | em | vh | vw | auto | initial | inherit</span></p>
+              </div>
+              <div class="flex-column flex-basis-0 flex-grow-1 padding">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-sheet">
+
+        <div class="card">
+          <div class="card-header">
+            Experimenting with z-index
+          </div>
+          <div class="card-content">
+            <div class="z-index-example">
+              <div class="square-1 dye-accent-light">
+              </div>
+              <div class="square-2 dye-accent">
+              </div>
+              <div class="square-3 dye-accent-dark">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>

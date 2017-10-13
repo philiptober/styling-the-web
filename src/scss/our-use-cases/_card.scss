@@ -1,0 +1,22 @@
+.card {
+  box-shadow: $level-1-shadow;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  background-color: white;
+
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: $primary;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+}

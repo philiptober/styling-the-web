@@ -1,0 +1,32 @@
+.z-index-example {
+  outline: 1px solid $primary-dark;
+  position: relative;
+  width: 250px;
+  height: 250px;
+
+  .square-1,
+  .square-2,
+  .square-3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+
+  .square-1 {
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  .square-2 {
+    z-index: 1;
+    top: 25px;
+    left: 25px;
+  }
+
+  .square-3 {
+    z-index: 2;
+    top: 50px;
+    left: 50px;
+  }
+}
